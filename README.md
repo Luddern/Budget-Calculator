@@ -22,11 +22,22 @@
 - 前端：Vue 3、Vite、Pinia（狀態管理）、Vue Router、Tailwind CSS、Chart.js
 - 後端：Node.js、Express、better-sqlite3（SQLite）、bcryptjs（密碼雜湊）、jsonwebtoken（JWT）
 
-環境變數
-- 建議在 server 下建立 .env 檔來放置敏感資訊（例如 JWT_SECRET、資料庫路徑等）。.env 已在 .gitignore 中被忽略，請勿將敏感資訊推上遠端。
+環境變數（範例）
+建議在 server 目錄建立 .env 檔，範例如下（不要推到遠端）：
+
+--- server/.env 範例 ---
+PORT=3000
+JWT_SECRET=change_this_to_a_strong_secret
+DB_PATH=./db/expense-tracker.db
+# 若需要其他設定可加入，例如: NODE_ENV=production
+-----------------------
+
+操作流程補充
+- 建立 .env：在 server 資料夾下新增 .env，並填入 JWT_SECRET 等敏感資訊。
+- 初始化資料庫：如果 server 有提供初始化腳本（例如 server/db/init.js），請依 README 或 scripts 指示執行以建立資料表。
 
 注意事項
-- 請確認已有可用的 GitHub 權限（SSH key 或 Personal Access Token）以便推送。
-- 若要在遠端部署，請建立真實的 SQLite DB 或改用其他 DB，並設定正確的環境變數。
+- .env 已在 .gitignore 中被忽略，請勿將敏感資訊推上遠端。
+- 推到遠端前請確認不含個人憑證（SSH private key、Personal Access Token 等）。
 
-如需我把 README 再加上範例 .env 範本或更詳細的部署指引，請告訴我要包含哪些項目。
+需要我同時在 repo 新增一個 server/.env.example 檔（不含敏感值）嗎？
