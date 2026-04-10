@@ -1,0 +1,19 @@
+{
+  "name": "expense-tracker-server",
+  "version": "1.0.0",
+  "description": "Expense Tracker API Server",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch index.js",
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "better-sqlite3": "^11.7.0",
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "express-validator": "^7.2.1",
+    "jsonwebtoken": "^9.0.2"
+  }
+}
