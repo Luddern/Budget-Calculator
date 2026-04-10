@@ -40,4 +40,3 @@ DB_PATH=./db/expense-tracker.db
 - .env 已在 .gitignore 中被忽略，請勿將敏感資訊推上遠端。
 - 推到遠端前請確認不含個人憑證（SSH private key、Personal Access Token 等）。
 
-需要我同時在 repo 新增一個 server/.env.example 檔（不含敏感值）嗎？

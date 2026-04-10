@@ -1,3 +1,12 @@
+## Unreleased - 2026-04-10
+
+### 文件變更
+
+- 更新 README.md 為中文說明，並在 README 中加入 server/.env 範例說明。
+- 從 README 中移除提示句「需要我同時在 repo 新增一個 server/.env.example 檔（不含敏感值）嗎？」。
+
+---
+
 # 更新紀錄 (CHANGELOG)
 
 ## v1.2.0 - 防呆強化與安全性提升
@@ -148,7 +157,7 @@
 #### 4. 路由切換動畫
 
 - **檔案**: `client/src/components/AppLayout.vue`、`client/src/assets/main.css`
-- **說明**: `<router-view>` 改為 `v-slot` 搭配 `<transition name="fade">` 實現頁面切換淡入淡出效果（0.15s ease）
+- **說明**: `<router-view>` 改為 `v-slot` 搭配 `<transition name=\"fade\">` 實現頁面切換淡入淡出效果（0.15s ease）
 
 #### 5. 表單操作錯誤處理
 
